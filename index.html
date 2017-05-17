@@ -8,50 +8,53 @@
 			<a-assets>
 				<!-- Boo -->
 				<a-assets-item 	id="boo-obj" 
-								src="assets/obj/boo_010.obj"></a-assets-item> 
+						src="assets/obj/boo_010.obj"></a-assets-item> 
 				<a-assets-item 	id="boo-mtl" 
-								src="assets/obj/boo_010.mtl"></a-assets-item>
+						src="assets/obj/boo_010.mtl"></a-assets-item>
 				<!-- mega -->
 				<a-assets-item 	id="mega-obj" 
-								src="assets/obj/megaOut_038.obj"></a-assets-item> 
+						src="assets/obj/megaOut_038.obj"></a-assets-item> 
 				<a-assets-item 	id="mega-mtl" 
-								src="assets/obj/megaOut_038.mtl"></a-assets-item>
+						src="assets/obj/megaOut_038.mtl"></a-assets-item>
 				
 			</a-assets>
 			
 			<!-- Lights -->
 			<a-light 	type="ambient" 
-						color="#8d86a0"></a-light>
+					color="#8d86a0"></a-light>
 			<a-light 	type="point" 
-						color="#ed7e42"
-						decay="0.5"
-						distance="8"
-						intensity="1"
-						position="5 8 14"></a-light>
+					color="#ed7e42"
+					decay="0.5"
+					distance="8"
+					intensity="1"
+					position="5 8 14"></a-light>
 			<a-light 	type="point" 
-						color="#ed7e42"
-						decay="0.5"
-						distance="8"
-						intensity="1"
-						position="-5 8 14"></a-light>
+					color="#ed7e42"
+					decay="0.5"
+					distance="8"
+					intensity="1"
+					position="-5 8 14"></a-light>
 			<a-light 	color="#626f84" 
-						intensity="0.8" 
-						position="-1 1 1"></a-light>
+					intensity="0.8" 
+					position="-1 1 1"></a-light>
 			
 			<!-- room -->
 			<a-obj-model 	src="#mega-obj" 
-							mtl="#mega-mtl"></a-obj-model>
+					mtl="#mega-mtl"></a-obj-model>
 			
 			<!-- Particle System -->
 			<a-entity position="-10 39 0" particle-system="	preset: snow; 
-															maxAge: 3;
-															accelerationValue: -1 -1 -1;
-															particleCount: 10000"></a-entity>
+									maxAge: 3;
+									accelerationValue: -1 -1 -1;
+									particleCount: 10000"></a-entity>
 							
 			
 			<a-sky color="#2e1f59"></a-sky>
 			
-			<a-entity camera="userHeight: 5" position="0 .5 0" look-controls wasd-controls="acceleration:200"></a-entity>
+			<a-entity camera="userHeight: 5" 
+				  position="0 .5 0" 
+				  look-controls 
+				  wasd-controls="acceleration:200"></a-entity>
 		</a-scene>
 	</body>
 </html>
